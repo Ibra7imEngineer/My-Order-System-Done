@@ -1119,10 +1119,49 @@ footer a:hover {
         display: none;
     }
     
-    .nav-icons {
-        display: none;
+    .navbar {
+        justify-content: space-between;
     }
     
+    .nav-icons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-icons > div {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        border-radius: 14px;
+        color: white;
+    }
+
+    .nav-icons i {
+        font-size: 1.25rem;
+    }
+
+    .cart-icon {
+        position: relative;
+    }
+
+    #cart-count {
+        top: -8px;
+        right: -8px;
+        font-size: 11px;
+        padding: 4px 7px;
+    }
+
     /* Hamburger Menu Styles */
     .hamburger-menu {
         display: flex;
@@ -1677,22 +1716,22 @@ footer a:hover {
         display: block;
     }
     
-    /* Hide hamburger menu on tablet */
-    .hamburger-menu {
-        display: none !important;
+    .navbar {
+        justify-content: space-between;
     }
-    
-    /* Hide mobile navigation menu on tablet */
-    .mobile-nav-overlay {
-        display: none !important;
-    }
-    
-    .mobile-nav-menu {
-        display: none !important;
-    }
-    
-    .nav-links {
+
+    .navbar-brand {
         display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hamburger-menu {
+        display: flex !important;
+    }
+
+    .nav-links {
+        display: none;
         gap: 14px;
         overflow-x: auto;
         align-items: center;

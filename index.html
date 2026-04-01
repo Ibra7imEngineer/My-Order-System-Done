@@ -117,17 +117,17 @@
 <body>
     <header>
         <nav class="navbar">
+            <div class="navbar-brand">
                 <div class="logo" data-action="navigate" data-target="home-page">
-                <i class="fa-solid fa-utensils"></i>
-                <span>My Order</span>
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>My Order</span>
+                </div>
+                <button class="hamburger-menu" id="hamburgerMenu" aria-label="فتح القائمة" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            
-            <!-- Hamburger Menu for Mobile -->
-            <button class="hamburger-menu" id="hamburgerMenu" aria-label="فتح القائمة" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             
             <!-- Mobile Navigation Menu -->
             <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
@@ -144,11 +144,6 @@
                     <li><a href="#" data-action="navigate" data-target="contact-page" class="mobile-nav-link">📞 تواصل معنا</a></li>
                 </ul>
                 <div class="mobile-nav-actions">
-                    <button class="mobile-nav-btn cart-btn" data-action="navigate" data-target="cart-page" title="اذهب إلى السلة">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span>السلة</span>
-                        <span class="cart-badge" id="cart-count-mobile">0</span>
-                    </button>
                     <button class="mobile-nav-btn user-btn" data-action="navigate" data-target="customer-login-page" title="حسابي">
                         <i class="fa-solid fa-circle-user"></i>
                         <span>حسابي</span>
